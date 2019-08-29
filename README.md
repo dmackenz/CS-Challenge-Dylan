@@ -1,8 +1,6 @@
-# CS-Challenge-Dylan
+# Changes to the Codebase
 
 The original source code can be found in CS-Challenge-Master. The new refactored code is inside of CS-Challenge-Refactor.
-
-# Changes to the Codebase
 
 ### Created a Wrapper Class For The Chuck Norris API Integration (`Src/Jokes/ChuckNorrisAPI.cs`)
 
