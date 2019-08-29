@@ -29,7 +29,7 @@ namespace CS_Challenge_Refactor.Src.Jokes
     /// <summary>
     /// <c>create</c> Creates an instance of a Joke with no specified category.
     /// </summary>
-    /// <returns>The random Joke.</returns
+    /// <returns>The random Joke.</returns>
     public static Joke create()
     {
       return create(null);
