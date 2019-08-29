@@ -16,7 +16,7 @@ namespace CS_Challenge_Refactor
   {
     // Base URL for hitting the names API
     private static readonly string NAMES_URL = "http://uinames.com";
-    
+
     // Endpoint that provides 500 random names of Canadian origin
     private static readonly string NAMES_ENDPOINT = "/api/?amount=500&region=canada";
 
@@ -38,15 +38,15 @@ namespace CS_Challenge_Refactor
         client.BaseAddress = new Uri(NAMES_URL + NAMES_ENDPOINT);
         HttpResponseMessage response = client.GetAsync("").Result;
         response.EnsureSuccessStatusCode();
-        
+
         // Decode response from API
         string jsonString = response.Content.ReadAsStringAsync().Result;
         dynamic[] names = JsonConvert.DeserializeObject<dynamic[]>(jsonString);
-        
+
         // Cache each name retrieved from the API in a list
         foreach (var name in names)
         {
-          retrievedNames.Add((string) (name.name + " " + name.surname));
+          retrievedNames.Add((string)(name.name + " " + name.surname));
         }
       }
     }

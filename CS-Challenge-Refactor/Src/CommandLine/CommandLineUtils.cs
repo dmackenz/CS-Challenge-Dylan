@@ -97,7 +97,7 @@ namespace CS_Challenge_Refactor
 
     public static int listenForSingleDigitValue()
     {
-        return int.Parse(CommandLineUtils.listenForCharacterInput(new List<char> { '1', '2', '3', '4', '5', '6', '7', '8', '9' }).ToString());
+      return int.Parse(CommandLineUtils.listenForCharacterInput(new List<char> { '1', '2', '3', '4', '5', '6', '7', '8', '9' }).ToString());
     }
   }
 }
